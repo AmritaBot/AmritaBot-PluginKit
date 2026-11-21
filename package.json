@@ -1,6 +1,6 @@
 {
   "name": "@amrita-constant/webui-plugin-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AmritaBot WebUI 插件构建套件：把宿主运行时依赖解析成 window.__AMRITA_HOST__ 的引用，避免插件打进第二份 React",
   "license": "MIT",
   "type": "module",

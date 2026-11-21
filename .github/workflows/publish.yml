@@ -35,8 +35,4 @@ jobs:
         run: npm install -g npm@^11.5.0 # trusted publishing 需要 npm 11.5+
 
       - name: Publish
-        # 首个版本用 NPM_TOKEN 发布：npm 的 trusted publisher 只能挂在已存在的包上，
-        # 待包创建并配好 trusted publisher 后，删掉 env 即可回到纯 OIDC
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
